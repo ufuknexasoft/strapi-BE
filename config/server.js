@@ -4,7 +4,7 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array("APP_KEYS", ["myKeyA", "myKeyB"]),
   },
-  url: env("PUBLIC_URL", "https://strapi-backend-m1vd.onrender.com"),
+
   webhooks: {
     populateRelations: env.bool("WEBHOOKS_POPULATE_RELATIONS", false),
   },
