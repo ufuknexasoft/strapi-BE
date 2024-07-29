@@ -1,7 +1,7 @@
 module.exports = ({ env }) => ({
-  host: env("HOST", "0.0.0.0"),
-  port: env.int("PORT", 1337),
-  url: env("PUBLIC_URL", "https://strapi-backend-m1vd.onrender.com"),
+  host: env("HOST", "https://strapi-backend-m1vd.onrender.com"),
+  port: env.int("PORT", 6543),
+
   app: {
     keys: env.array("APP_KEYS", ["myKeyA", "myKeyB"]),
   },
