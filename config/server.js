@@ -1,6 +1,6 @@
 module.exports = ({ env }) => ({
-  host: env("HOST", "https://strapi-backend-m1vd.onrender.com"),
-  port: env.int("PORT", 6543),
+  host: env("HOST", "0.0.0.0"), // This should be the hostname or IP address
+  port: env.int("PORT", 1337), // Use the appropriate port for your Strapi instance
 
   app: {
     keys: env.array("APP_KEYS", ["myKeyA", "myKeyB"]),
