@@ -4,10 +4,10 @@
   "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
-    "develop": "npx strapi develop",
-    "start": "npx strapi start",
-    "build": "npx strapi build",
-    "strapi": "npx strapi"
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
   },
   "dependencies": {
     "@strapi/plugin-i18n": "4.12.1",
