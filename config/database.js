@@ -12,7 +12,7 @@ module.exports = ({ env }) => ({
       ssl: {
         rejectUnauthorized: env.bool("DATABASE_SSL_SELF", false), // For self-signed certificates
       },
-      idleTimeoutMillis: 30000, // 30 seconds
+      idleTimeoutMillis: 300000, // 30 seconds
     },
     useNullAsDefault: true,
   },
