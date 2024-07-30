@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": " strapi build",
+    "build:render": "yarn install --production && yarn build",
     "develop": " strapi develop",
     "start": " strapi start",
     "strapi": "strapi"
