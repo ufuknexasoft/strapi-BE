@@ -1,12 +1,19 @@
-module.exports = ({ env }) => ({
-  host: env("HOST", "localhost"),
-  port: env.int("PORT", 8080),
-  app: {
-    keys: env.array("APP_KEYS", ["myKeyA", "myKeyB"]),
-  },
+var express = require("express");
 
-  nodeOptions: env("NODE_OPTIONS", "--max-old-space-size=2048"),
-  webhooks: {
-    populateRelations: env.bool("WEBHOOKS_POPULATE_RELATIONS", false),
+var app = express();
+
+app.get("/", function (req, res) {
+  res.send("sdsds");
+});
+
+app.listen(process.env.PORT);
+
+module.exports = ({ env }) => ({
+  host: env("HOST", "0.0.0.0"),
+  port: env.int("PORT", 80),
+  admin: {
+    auth: {
+      secret: env("ADMIN_JWT_SECRET", "9E3FdhrPvtS2fUtAV1sd9w=="),
+    },
   },
 });
